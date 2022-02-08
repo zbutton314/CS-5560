@@ -1,7 +1,8 @@
 # CS-5560
 Knowledge Discovery and Management
 
-### Partner Name
+### Partner Names
+Zach Button
 Adam Flowerday
 
 ### Lab Assignments
