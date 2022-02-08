@@ -2,8 +2,8 @@
 Knowledge Discovery and Management
 
 ### Partner Names
-Zach Button
-Adam Flowerday
+* Zach Button
+* Adam Flowerday
 
 ### Lab Assignments
 * Lab 1: https://github.com/zbutton314/CS-5560/wiki/Lab-1
