@@ -12,3 +12,4 @@ Knowledge Discovery and Management
 * Lab 4: https://github.com/zbutton314/CS-5560/wiki/Lab-4
 * Lab 5: https://github.com/zbutton314/CS-5560/wiki/Lab-5
 * Lab 6: https://github.com/zbutton314/CS-5560/wiki/Lab-6
+* Lab 7: https://github.com/zbutton314/CS-5560/wiki/Lab-7
