@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/zach/ontologies/2022/2/icp7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/zach/ontologies/2022/2/icp7">
+    <Prefix name="" IRI="http://www.semanticweb.org/zach/ontologies/2022/2/icp7"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Automobile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoxTruck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoxVan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Convertible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConvertibleCrossover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coupe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoupeCrossover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crossover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullSizeVan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hatchback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#I4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#I6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalCombustionMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manufacturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minivan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PanelVan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pickup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlatformTruck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiTruck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportUtilityVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandardCrossover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StepVan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#V6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wagon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#10CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#12CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#6CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#8CylinderMotor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manufactures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModelName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PersonName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RatedHorsepower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F20C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Honda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LambdaII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Me"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyCar1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyCar2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyCar3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toyota"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1GRFE"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Owner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#owns"/>
+                <Class IRI="#Automobile"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BoxTruck"/>
+        <Class IRI="#Truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoxVan"/>
+        <Class IRI="#Van"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Automobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Convertible"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConvertibleCrossover"/>
+        <Class IRI="#Crossover"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coupe"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoupeCrossover"/>
+        <Class IRI="#Crossover"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crossover"/>
+        <Class IRI="#Automobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricMotor"/>
+        <Class IRI="#Motor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullSizeVan"/>
+        <Class IRI="#Van"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hatchback"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#I4"/>
+        <Class IRI="#4CylinderMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#I6"/>
+        <Class IRI="#6CylinderMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalCombustionMotor"/>
+        <Class IRI="#Motor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minivan"/>
+        <Class IRI="#Van"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PanelVan"/>
+        <Class IRI="#Van"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pickup"/>
+        <Class IRI="#Truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlatformTruck"/>
+        <Class IRI="#Truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedan"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiTruck"/>
+        <Class IRI="#Truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportUtilityVehicle"/>
+        <Class IRI="#Truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardCrossover"/>
+        <Class IRI="#Crossover"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StepVan"/>
+        <Class IRI="#Van"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Truck"/>
+        <Class IRI="#Automobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#V6"/>
+        <Class IRI="#6CylinderMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Van"/>
+        <Class IRI="#Automobile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wagon"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#10CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#12CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#6CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#8CylinderMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BoxTruck"/>
+        <Class IRI="#Pickup"/>
+        <Class IRI="#PlatformTruck"/>
+        <Class IRI="#SemiTruck"/>
+        <Class IRI="#SportUtilityVehicle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Car"/>
+        <Class IRI="#Crossover"/>
+        <Class IRI="#Truck"/>
+        <Class IRI="#Van"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Convertible"/>
+        <Class IRI="#Coupe"/>
+        <Class IRI="#Hatchback"/>
+        <Class IRI="#Sedan"/>
+        <Class IRI="#Wagon"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectricMotor"/>
+        <Class IRI="#InternalCombustionMotor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#I6"/>
+        <Class IRI="#V6"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#10CylinderMotor"/>
+        <Class IRI="#12CylinderMotor"/>
+        <Class IRI="#3CylinderMotor"/>
+        <Class IRI="#4CylinderMotor"/>
+        <Class IRI="#5CylinderMotor"/>
+        <Class IRI="#6CylinderMotor"/>
+        <Class IRI="#8CylinderMotor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#I4"/>
+        <NamedIndividual IRI="#F20C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturer"/>
+        <NamedIndividual IRI="#Honda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturer"/>
+        <NamedIndividual IRI="#Kia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#V6"/>
+        <NamedIndividual IRI="#LambdaII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Owner"/>
+        <NamedIndividual IRI="#Me"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Convertible"/>
+        <NamedIndividual IRI="#MyCar1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sedan"/>
+        <NamedIndividual IRI="#MyCar2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SportUtilityVehicle"/>
+        <NamedIndividual IRI="#MyCar3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manufacturer"/>
+        <NamedIndividual IRI="#Toyota"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#V6"/>
+        <NamedIndividual IRI="#1GRFE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMotorOf"/>
+        <NamedIndividual IRI="#F20C"/>
+        <NamedIndividual IRI="#MyCar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manufactures"/>
+        <NamedIndividual IRI="#Honda"/>
+        <NamedIndividual IRI="#MyCar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manufactures"/>
+        <NamedIndividual IRI="#Kia"/>
+        <NamedIndividual IRI="#MyCar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMotorOf"/>
+        <NamedIndividual IRI="#LambdaII"/>
+        <NamedIndividual IRI="#MyCar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#MyCar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#MyCar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#MyCar3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotor"/>
+        <NamedIndividual IRI="#MyCar1"/>
+        <NamedIndividual IRI="#F20C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <NamedIndividual IRI="#MyCar1"/>
+        <NamedIndividual IRI="#Honda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#MyCar1"/>
+        <NamedIndividual IRI="#Me"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotor"/>
+        <NamedIndividual IRI="#MyCar2"/>
+        <NamedIndividual IRI="#LambdaII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <NamedIndividual IRI="#MyCar2"/>
+        <NamedIndividual IRI="#Kia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#MyCar2"/>
+        <NamedIndividual IRI="#Me"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotor"/>
+        <NamedIndividual IRI="#MyCar3"/>
+        <NamedIndividual IRI="#1GRFE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <NamedIndividual IRI="#MyCar3"/>
+        <NamedIndividual IRI="#Toyota"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#MyCar3"/>
+        <NamedIndividual IRI="#Me"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manufactures"/>
+        <NamedIndividual IRI="#Toyota"/>
+        <NamedIndividual IRI="#MyCar3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMotorOf"/>
+        <NamedIndividual IRI="#1GRFE"/>
+        <NamedIndividual IRI="#MyCar3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RatedHorsepower"/>
+        <NamedIndividual IRI="#F20C"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">240</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RatedHorsepower"/>
+        <NamedIndividual IRI="#LambdaII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">293</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PersonName"/>
+        <NamedIndividual IRI="#Me"/>
+        <Literal>Zach Button</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ModelName"/>
+        <NamedIndividual IRI="#MyCar1"/>
+        <Literal>S2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ModelName"/>
+        <NamedIndividual IRI="#MyCar2"/>
+        <Literal>Cadenza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ModelName"/>
+        <NamedIndividual IRI="#MyCar3"/>
+        <Literal>FJ Cruiser</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RatedHorsepower"/>
+        <NamedIndividual IRI="#1GRFE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">260</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMotor"/>
+        <ObjectProperty IRI="#isMotorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <ObjectProperty IRI="#manufactures"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="#owns"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#manufactures"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#owns"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasMotor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMotorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#manufactures"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#owns"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasMotor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMotorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#manufactures"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#owns"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMotor"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMotorOf"/>
+        <Class IRI="#Motor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manufactures"/>
+        <Class IRI="#Manufacturer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotor"/>
+        <Class IRI="#Motor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManufacturedBy"/>
+        <Class IRI="#Manufacturer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMotorOf"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manufactures"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Automobile"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ModelName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#PersonName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#RatedHorsepower"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModelName"/>
+        <Class IRI="#Automobile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PersonName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RatedHorsepower"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModelName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PersonName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RatedHorsepower"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
