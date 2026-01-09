@@ -1,5 +1,5 @@
 # CS-5560
-Knowledge Discovery and Management
+**Knowledge Discovery and Management - Homework**
 
 ### Partner Names
 * Zach Button
